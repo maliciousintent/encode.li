@@ -110,3 +110,19 @@ textarea {
   resize: vertical;
   cursor: text !important;
 }
+p.preview {
+  text-align: right;
+}
+p.preview img {
+  width: auto;
+  height: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+p.preview img[src=""] {
+  display: none;
+}
+p.preview span {
+  color: #999;
+  font-size: 13px;
+}
