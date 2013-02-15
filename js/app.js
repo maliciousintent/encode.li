@@ -206,10 +206,11 @@ var onDrop = function (evt) {
 };
 
 var initDnD = function () {
-  document.getElementsByTagName("body")[0].addEventListener("dragenter", onDragEnter, false);
-  document.getElementById("dropArea").addEventListener("dragleave", onDragLeave, false);
-  document.getElementById("dropArea").addEventListener("dragover", noopHandler, false);
-  document.getElementById("dropArea").addEventListener("drop", onDrop, false);
+  var body = document.getElementsByTagName("body")[0];
+  body.addEventListener("dragenter", onDragEnter, false);
+  body.addEventListener("dragleave", onDragLeave, false);
+  body.addEventListener("dragover", noopHandler, false);
+  body.addEventListener("drop", onDrop, false);
   
   document.getElementById('container64').addEventListener("click", function (e) {
     e.target.select();

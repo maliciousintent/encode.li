@@ -40,7 +40,18 @@ html.no-js
             h3 Name
             p 
               strong Encode.li
-              |  &middot; Real-time thumbnails for the web
+              |  &middot; Image to Base64 encoder.
+              
+        .row-fluid
+          .span12
+            h3 Usage
+            ol
+              li Drop an image on this page
+              li Copy the base64 encoded data:
+            
+            textarea.span12#container64
+              
+              
         .row-fluid
           .span12
             h3 Credits
@@ -50,8 +61,7 @@ html.no-js
               |  &copy; 2013
       
       
-        #dropArea(style='background-color:red; width:150px; height:150px; min-height:150px;')
-        textarea#container64
+        
       
       script(src='js/app.js')
       
