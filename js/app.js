@@ -173,10 +173,12 @@ var _processFile = function (file) {
   
   reader.onloadend = function (evt) {
     var data = evt.target.result;
-
+    console.log('Processing: ', file);
+    
     data = data.substring(data.indexOf(',') + 1);
-    document.getElementById('container64').innerHTML = 'data:image;base64,' + data;
-    document.getElementById('container64').select();
+    document.getElementById('containerSize').innerHTML = 'Size: ' + Math.round(file.size / 1000 * 100) / 100  + 'KB';
+    document.getElementById('container64').innerHTML = 'data:' + file.type + ';base64,' + data;
+    document.getElementById('containerPreview').setAttribute('src', 'data:' + file.type + ';base64,' + data);
   };
 
   reader.readAsDataURL(file);
