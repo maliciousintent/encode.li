@@ -176,6 +176,7 @@ var _processFile = function (file) {
 
     data = data.substring(data.indexOf(',') + 1);
     document.getElementById('container64').innerHTML = 'data:image;base64,' + data;
+    document.getElementById('container64').select();
   };
 
   reader.readAsDataURL(file);
