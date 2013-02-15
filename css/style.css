@@ -96,3 +96,17 @@ a {
 a:hover {
   color: #bf3030;
 }
+img.drop {
+  width: 32px;
+  height: 32px;
+}
+.span11 p {
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+textarea {
+  background: #eee;
+  height: 150px;
+  resize: vertical;
+  cursor: text !important;
+}

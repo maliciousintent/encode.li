@@ -27,7 +27,7 @@ html.no-js
       .fullbar.dark
         .container
           .row-fluid
-            .span12\
+            .span12
               h1.logo 
                 | encode
                 b .li
@@ -45,11 +45,17 @@ html.no-js
         .row-fluid
           .span12
             h3 Usage
-            ol
-              li Drop an image on this page
-              li Copy the base64 encoded data:
-            
-            textarea.span12#container64
+
+        .row-fluid
+          .span11
+            p Drop an image on this page
+          .span1
+            img.drop(src='img/drop-here.png')
+
+        .row-fluid
+          .span12
+            p
+              textarea.span12#container64(readonly='true')
               
               
         .row-fluid
