@@ -1,7 +1,7 @@
 encode.li
 =========
 
-Image to base64 online encoder using HTML5 file API.
+Image to base64 online encoder using HTML5 file API, online at [encode.li](http://encode.li).
 
 
 ### License
